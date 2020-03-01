@@ -1,0 +1,103 @@
+/* global styles */
+body {
+	background-color: #e6e6e6;
+	font-family: 'Lato', sans-serif;
+}
+
+.container {
+	width: 510px;
+	margin: 50px auto;
+	background-color: white;
+	
+}
+
+h1 {
+	font-size: 2.8125em;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 100;
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
+	margin: 0 0.5em 0;
+	display: inline;
+}
+
+form {
+	padding: 30px;
+}
+
+
+/* header style*/
+header {
+	background-image: url(../images/city.jpg);
+	height: 142px;
+    background-position-y: -70px;
+    padding: 25px;
+}
+
+header p {
+	color: white;
+	margin: 1.5em ;
+}
+
+/*form styles*/
+
+form .form-elements {
+	display: inline-block;
+    width: 223px;
+	margin-bottom: 8px;
+}
+
+form label {
+	display: block;
+	margin: 0 0.5em 0.3em;
+	color: #4f6fad;
+	font-size: 1em;
+}
+
+form input, textarea {
+	margin: 0 0.5em 0;
+	border: 1px solid #ccc;
+	padding: 6px 10px;
+	color: #555;
+	background-color: white;
+	transition: background-color .5s ease-in-out;
+}
+
+form input:focus {
+	background-color: #8bade4d1;
+}
+
+form .line {
+	height: 2px;
+	background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
+	margin: 23px 0.5em;
+}
+
+/*button styles*/
+button {
+	background-color: #4f6fad;
+	border: none;
+	border-bottom: 5px solid #374d78;
+	color: white;
+	padding: .75em 1.5em;
+	cursor: pointer;
+	transition: background-color .5s ease-in-out;
+}
+
+button:hover {
+	background-color: gray;
+	border-bottom: none;
+	margin-bottom: 5px;
+}
+
+.submit-actions {
+	margin: 1.5em 0.5em 0;
+}
+
+
+span {
+	color: #4f6fad;
+}
+
+
+
