@@ -1,0 +1,82 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-image: url(../images/ftc.jpg);
+	background-repeat: no-repeat;
+	background-position-y: center;
+    background-position-x: center;
+	background-size: cover;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 2.75em;
+	text-align: center;
+	color: white;
+	margin-bottom: 10px;
+}
+
+#form {
+	width: 55%;
+	margin: 150px auto 0;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#contact_form {
+	padding: 22px;
+	border: 2px solid #fff;
+	margin-bottom: 66px;
+}
+
+input {
+	border: none;
+	width: 100%;
+	background: none;
+	font-size: 18px;
+	font-family: arial;
+	font-style: italic;
+	margin-bottom: 22px;
+	padding-bottom: 11px;
+	color: white;
+	border-bottom: 2px solid #fff;
+	transition: border-bottom 1s ease-in-out;
+}
+
+input:focus {
+	outline: 0 none;
+	border-bottom: 2px solid orange;
+}
+
+label {
+	color: #848381;
+	position: relative;
+	top: -51px;
+	transition: top 1s ease-in-out;
+}
+
+input:focus + label,
+input:valid + label {
+	top: -80px;
+}
+
+.btn {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 14px 33px;
+	border: 2px solid #777;
+	color: white;
+	display: inline-block;
+	border-radius: 30px;
+	background: none;
+	margin: 11px 0 11px 11px; 
+}
+
+.btn:hover {
+	background-color: white;
+	color: #444;
+}
+
