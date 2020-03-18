@@ -1,0 +1,138 @@
+/* global styles */
+body {
+  background-color: #e6e6e6;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  width: 400px;
+  margin: 50px auto;
+  background-color: white;
+}
+
+header {
+  background-color: #f2385a;
+  overflow: auto;
+}
+
+h1 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+  text-shadow: 2px 2px #403f3fc4;
+  margin: 7px 15px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content p {
+  font-size: 0.9em;
+  margin-top: 0;
+}
+
+/* label with fa icon styles */
+.message {
+  cursor: pointer;
+  width: 95%;
+  box-shadow: 2px 2px 0 0 #403f3fc4;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.fa {
+  color: #403f3fc4;
+}
+
+
+/* start of form styles */
+form {
+  overflow: hidden;
+  height: 0;
+  transition: height .5s ease-in-out; /*I define height=0 then I add the transition and add my key 'height'*/
+}
+
+input:checked + form {
+  height: 290px; /*when input is checked I add the height to the form*/
+}
+
+
+form .form-elements {
+  margin-bottom: 15px;
+  position: relative; /* first: position relative to my container*/
+}
+
+label {
+	background-color: #f2385a;
+	color: white;
+	padding: 6px 8px;
+	display: inline-block;
+	width: 18%;
+	text-transform: uppercase;
+  }
+
+.form-elements label {
+	position: absolute; /*second: position absolute to my element inside my container*/
+	left: 0;
+	text-align: center;
+	transition: left .5s ease-in-out;
+}
+
+form input:focus + label {
+	left: 279px; /*when the input is focus I add 279px to my label. My label will move to the right.*/
+}
+
+form input {
+  border: 1px solid #ccc;
+  padding: 6px 15px 6px 84px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: padding .5s ease-in-out, background-color .5s ease-in-out;
+}
+
+form input:focus {
+	padding-left: 15px;
+	background-color: #f2385a3d;
+	box-shadow: 2px 2px 2px 0 #ea7c86 inset;
+	outline: none;        /* outline: none + border-color = to change the color of my inputs */
+  border-color: #f2385a;      
+}
+
+form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+#checkbox {
+  display: none;
+}
+/* end of form styles */
+
+
+/* start button styles */
+button {
+  margin-top: 1em;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  background-color: #f2385a;
+  border: none;
+  color: white;
+  padding: 0.75em 1.5em;
+  cursor: pointer;
+  box-shadow: 1px 1px 0 0 #832032, 2px 2px 0 0 #832032, 3px 3px 0 0 #832032;
+}
+
+button:hover {
+    box-shadow: 1px 1px 0 0 #832032, 0 0 0 0 #832032, 0 0 0 0 #832032;
+    margin: 22px 0 0 2px;
+}
+
+.submit-actions {
+  text-align: center;
+}
+/* end button styles */
