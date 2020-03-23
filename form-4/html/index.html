@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+	
+		<!--
+			forms html5
+		    Created by Antonella Testa, 		
+		    2020 
+		-->
+
+		<meta charset="UTF-8"/>
+
+		<title>html 5 forms!</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+
+	<body>
+		<!-- start div container -->
+		<div class="container">
+			<!-- start of section col-left -->
+			<section class="col-left">
+			
+				<div class="info">
+					<h2><i class="fa fa-map-marker" aria-hidden="true"></i>address</h2>
+					<p>
+						Moda Center 5th floor. 456 New York </br>
+						<!--New York, NY 10018 US. -->
+					</p>
+				</div>
+				
+				<div class="info">
+					<h2><i class="fa fa-phone" aria-hidden="true"></i>lets talk</h2>
+					<a href="tel:+353 458 5698">+353 458 5698</a>
+				</div>
+				
+				<div class="info">
+					<h2><i class="fa fa-envelope-o" aria-hidden="true"></i>general support</h2>
+					<a href="mailto:contact@gmail.com">contact@gmail.com</a>
+				</div>
+			<!-- end of section col-left -->
+			</section>
+			
+			<!-- start of section col-right -->
+			<section class="col-right">
+			
+				<h1>send us a message</h1>
+			
+			     <!-- start of form -->
+				<form>
+				
+					<div class="form-elements form-elements_double">
+						<label for="name">tell us your name *</label>
+						<input type="text" name="name" id="name" placeholder="first name" required/>
+						<input type="text" name="surname" id="surname" placeholder="last name" required/>
+					</div>
+					
+					<div class="form-elements">
+						<label for="email">enter your email *</label>
+						<input type="email" name="email" id="email" placeholder="e.g.example@gmail.com" required/>
+					</div>
+					
+					<div class="form-elements">
+						<label for="phone">enter your phone number</label>
+						<input type="number" name="phone" id="phone" placeholder="e.g. +353 458 754" required/>
+					</div>
+					
+					<label for="comments">message *</label>
+					<textarea name="comments"  cols="33" rows="6" placeholder="write us a message" id="comments"></textarea>
+						
+					<div class="submit-actions">
+						<button>send message</button>
+					</div>
+
+				</form>
+				<!-- end of form -->
+			</section>			
+			<!-- end of section col-right -->	
+		</div>
+		<!-- end div container -->
+
+	</body>
+
+</html>

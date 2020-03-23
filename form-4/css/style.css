@@ -1,0 +1,150 @@
+/* global styles */
+
+html {
+	font-size: 14px;
+}
+
+body {
+	background-color: #e6e6e6;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	width: 850px;
+	height: 560px;
+	margin: 50px auto;
+	background-color: white;
+}
+
+h1 {
+	text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+}
+
+h2 {
+	color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+h2 .fa {
+	padding-right: 10px;
+}
+
+p {
+	font-size: .8rem;
+}
+
+/* start of container column left and right */
+.col-right {
+	display: inline-block;
+	width: 45%;
+	margin: 10px 37px;
+	vertical-align: top;
+}
+
+.col-left {
+	background-image: url(../images/bg-01.jpg);
+	position: relative;
+	z-index:1;
+	display: inline-block;
+	width: 45%;
+	height: 560px;
+}
+
+.col-left::after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(19, 19, 19, 0.89);
+}
+
+.col-left .info {
+	z-index: 2;
+	position: relative;
+	color: white;
+	width: 228px;
+    margin: 35px auto;
+}
+
+.col-left .info:first-of-type {
+	margin: 50% auto 0;
+}
+
+.col-left .info a {
+	text-decoration: none;
+    color: #00ad5f;
+}
+
+.info p::after {
+	content: "New York, NY 10018 US.";
+	color: #7d7d7d;
+}
+
+.info p {
+	color: #a9717b;
+}
+/* end of container column left and right */
+
+/* start of form styles */
+.form-elements{
+	margin-bottom: 15px;
+	font-size: 0;
+}
+
+.form-elements label,
+.form-elements input {
+	font-size: 1rem;
+}
+
+.form-elements.form-elements_double input {
+	width: 50%;
+}
+
+form textarea {
+	width: 100%;
+    box-sizing: border-box;
+}
+
+
+label {
+	display: block;
+	border: 1px solid #959595;
+	padding: 10px;
+	border-bottom: none;
+}
+
+input {
+	padding: 10px;
+	border: 1px solid #959595;
+	width: 100%;
+	box-sizing: border-box;
+}
+/* end of form styles */
+
+/* start of button styles */
+button {
+	text-transform: uppercase;
+	background-color: #00ad5f;
+	border: none;
+	color: white;
+	padding: .75em 1.5em;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #0b613a;
+	box-shadow: 2px 2px #272525d1;
+}
+
+.submit-actions {
+	text-align: center;
+	margin: 12px 0;
+}
+/* end of button styles */
